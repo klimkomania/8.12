@@ -95,6 +95,9 @@ function checkRoundWinner(playerPick, computerPick) {
     } else if (winnerIs == 'computer') {
         computerResultElem.innerHTML = "Wygrana!";
         computer.score++;
+    } else {
+        playerResultElem.innerHTML = "Remis";
+        computerResultElem.innerHTML = "Remis";
     }
     setGamePoints();
     endGame();
